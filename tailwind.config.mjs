@@ -6,8 +6,13 @@ export default {
 			colors: {
 				primary: '#242222',
 				action: '#FA1600'
+			},
+			fontFamily: {
+				avantExtraBold: ['Avantt-ExtraBold', 'sans-serif'],
+				
+				body: ['Inter', 'sans-serif']
 			}
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 }
