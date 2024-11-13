@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
 import Features from '../components/Features.astro';
+import { Hero } from '@/components/Hero';
 import { TeamActivities } from '@/components/TeamActivities';
 import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
@@ -10,7 +10,7 @@ import { CTA } from '@/components/CTA';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Hero />
+		<Hero client:load />
 		<Features />
 		<TeamActivities client:load />
 		<Testimonials client:load />

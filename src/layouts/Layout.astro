@@ -3,7 +3,8 @@ interface Props {
 	title: string;
 }
 
-import Navbar from "../components/Navbar.astro";
+import Navbar from "@/components/Navbar.astro";
+import { Footer } from '@/components/Footer';
 import '../styles/globals.css'
 
 const { title } = Astro.props;
@@ -22,5 +23,6 @@ const { title } = Astro.props;
 	<body>
 		<Navbar />
 		<slot />
+		<Footer client:load />
 	</body>
 </html>
