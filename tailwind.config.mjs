@@ -5,7 +5,8 @@ export default {
 		extend: {
 			colors: {
 				primary: '#242222',
-				action: '#FA1600'
+				action: '#FA1600',
+				lightgray: '#C1CEDE'
 			},
 			fontFamily: {
 				avantExtraBold: ['Avantt-ExtraBold', 'sans-serif'],

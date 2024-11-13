@@ -1,0 +1,35 @@
+---
+const features = [
+  {
+    icon: "/icon-flexible.svg",
+    title: "Flexibel",
+    description: "Een onvoorziene wijziging op het laatste moment? Geen probleem, wij zijn flexibel en kunnen jou teambuilding aanpassen aan elke omstandigheid."
+  },
+  {
+    icon: "/icon-personal.svg",
+    title: "Persoonlijk",
+    description: "In tegenstelling tot andere bedrijven werken wij niet met onderaannemers. Action Maker organiseert al zijn teambuildings zelf."
+  },
+  {
+    icon: "/icon-certified.svg",
+    title: "Gegarandeerde resultaten",
+    description: "Al onze animatoren zijn gecertificeerd en experts op het vlak van de activiteiten die ze begeleiden."
+  }
+];
+---
+<section class="py-20 h-[746px] bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-5xl font-avantExtraBold text-center mb-28">Waarom Kiezen Voor Action Maker</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+      {features.map(feature => (
+        <div class="text-center p-8 border border-lightgray rounded-lg h-80">
+          <div class="w-16 h-16 mx-auto mb-4">
+            <img src={feature.icon} alt={feature.title} class="w-full h-full" />
+          </div>
+          <h3 class="text-xl font-semibold mb-2">{feature.title}</h3>
+          <p class="text-gray-600">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
