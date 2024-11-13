@@ -1,5 +1,4 @@
 ---
-import { Search } from 'lucide-astro'
 ---
 <header class="w-full bg-primary backdrop-blur-sm z-50 shadow-sm">
   <nav class="container mx-auto px-4">
@@ -15,18 +14,6 @@ import { Search } from 'lucide-astro'
         <a href="#features" class="hover:text-action">Teambuilding</a>
         <a href="#testimonials" class=" hover:text-action">Ervaringen</a>
         <a href="#contact" class=" hover:text-action">Contact</a>
-        <a 
-          href="#contact" 
-          class="bg-primary text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors"
-        >
-          Start nu
-        </a>
-      </div>
-
-      <!-- Search -->
-      <div class="flex items-center">
-        <input type="text" placeholder="Zoeken..." class="bg-primary text-white px-4 py-2 rounded-md" />
-        <Search class="text-white ml-2 hover:text-action cursor-pointer" />
       </div>
 
       <!-- Mobile Menu Button -->
@@ -55,17 +42,11 @@ import { Search } from 'lucide-astro'
       id="mobile-menu" 
       class="hidden md:hidden pb-4"
     >
-      <div class="flex flex-col space-y-3">
-        <a href="/" class="text-gray-700 hover:text-primary px-2">Home</a>
-        <a href="#features" class="text-gray-700 hover:text-primary px-2">Teambuilding</a>
-        <a href="#testimonials" class="text-gray-700 hover:text-primary px-2">Ervaringen</a>
-        <a href="#contact" class="text-gray-700 hover:text-primary px-2">Contact</a>
-        <a 
-          href="#contact" 
-          class="bg-primary text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors inline-block mx-2"
-        >
-          Start nu
-        </a>
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="/" class=" hover:text-action px-2">Home</a>
+        <a href="#features" class=" hover:text-action px-2">Teambuilding</a>
+        <a href="#testimonials" class=" hover:text-action px-2">Ervaringen</a>
+        <a href="#contact" class=" hover:text-action px-2">Contact</a>
       </div>
     </div>
   </nav>
