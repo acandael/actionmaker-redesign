@@ -12,7 +12,7 @@ export function NavLogo() {
         alt=""
         // className="h-8 w-auto"
         aria-hidden="true"
-        className="w-[150px] h-[75px]"
+        className="w-[150px] h-auto"
       />
     </a>
   );

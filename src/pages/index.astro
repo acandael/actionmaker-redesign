@@ -1,21 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Features from '../components/Features.astro';
-import { Hero } from '@/components/Hero';
+import Hero from '@/components/Hero.astro';
 import { TeamActivities } from '@/components/TeamActivities';
 import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
-import { CTA } from '@/components/CTA';
+import CTA from '@/components/CTA.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Hero client:load />
+		<Hero />
 		<Features />
 		<TeamActivities client:load />
 		<Testimonials client:load />
 		<FAQ client:load />
-		<CTA client:load />
+		<CTA />
 	</main>
 </Layout>
 
